@@ -2,13 +2,13 @@
 
 <article id="article">
   <header>
-  {{ if .Params.categories }}
-    <i class="fas fa-folder"></i>
-    {{ range .Params.categories }}
-    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-    &nbsp;
+    {{ if .Params.categories }}
+      <i class="fas fa-folder"></i>
+      {{ range .Params.categories }}
+      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+      &nbsp;
+      {{ end }}
     {{ end }}
-  {{ end }}
 
     <h1 style="text-align: center;" >{{ .Title }}</h1>
     <div class="post-meta">
