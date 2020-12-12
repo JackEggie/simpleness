@@ -18,7 +18,7 @@
 
     {{ .Params.author }} &nbsp;
 
-    <!-- Valine Vistors Start -->
+    <!-- Valine Vistors in Header Start -->
     {{ if and .Site.Params.valine.enable (or (ne .Site.BaseURL "http://localhost:1313/") .Site.Params.valine.debug) }}
       <i class="far fa-eye"></i>
       <span id="{{ .Permalink | relURL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
